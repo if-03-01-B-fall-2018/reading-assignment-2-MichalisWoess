@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Cheat Sheet 2 by Michalis Woess</h1>
+    </head>
+    <hr>
+    <body>
+        <h1>Reading Assignment 2: WWW and html</h1>
+
+        <h2><font color="#0000FF">HTML</font></h2>
+        
+        <h3><u>1. Name the components of html elements properly</u></h3>
+            <h4><p>&nbsp;&nbsp;HTML Documents</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;they start with < !DOCTYPE > at the beginning.</p>
+
+            <h4><p>&nbsp;&nbsp;HTML Headings</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;they define a headig by < h1 >. there are h1 to h6.</p>
+
+            <h4><p>&nbsp;&nbsp;HTML Paragraphs</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;definded by < p >. Has start and end. Mark a paragraph.</p>
+
+            <h4><p>&nbsp;&nbsp;HTML Links</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;defined with the < a > tag. The link address is specified in the href attribute</p>
+
+            <h4><p>&nbsp;&nbsp;HTML Lists</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;defined with < ul > or < ol > tag. Per item in list you have to use < li ></p>
+
+            <h4><p>&nbsp;&nbsp;HTML Images</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;The source file (src), alternative text (alt), width, and height are provided as attributes. defined with < img > tag.</p>
+
+            <h4><p>&nbsp;&nbsp;HTML Buttons</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Defined with < button > tag.</p>
+
+        <h3><u>2. Identify void elements and how they are denoted</u></h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;< br > is an empty element with no content. It doesnt have a closing tag. Some more are area, base, col, embed,
+                hr, img, input, keygen. link, meta, param, source, wbr.</p>
+        
+        <h3><u>3. Identify attributes</u></h3>
+            <h4><p>&nbsp;&nbsp;All HTML element can have attributes</p></h4>
+            <h4><p>&nbsp;&nbsp;Attributes provide additional information about an element</p></h4>
+            <h4><p>&nbsp;&nbsp;Attributes are always specified in the start tag</p></h4>
+            <h4><p>&nbsp;&nbsp;Attributes usually come in name/value pairs like: name="value"</p></h4>
+
+        <h3><u>4. Write down the correct DOCTYPE declaration for html 5</u></h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;< !DOCTYPE html ></p>
+
+        <h3><u>5. Write down syntactically correct statements for the following elements</u></h3>
+            <h4><p>&nbsp;&nbsp;Article</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< arcticle > < / article ></p>
+
+            <h4><p>&nbsp;&nbsp;Body</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< body > < / body ></p>
+
+            <h4><p>&nbsp;&nbsp;Line Break</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< br ></p>
+
+            <h4><p>&nbsp;&nbsp;Headings</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< h1 > < / h1 ></p>
+
+            <h4><p>&nbsp;&nbsp;Section with meta-information</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< head > < / head ></p>
+
+            <h4><p>&nbsp;&nbsp;Top level element</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< html > < / html > defined with "img" tag.</p>
+            
+            <h4><p>&nbsp;&nbsp;Image name</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Name.jpg < img src = "Name.jpg" ></p>
+            
+            <h4><p>&nbsp;&nbsp;Paragraph</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< p > < / p ></p>
+
+            <h4><p>&nbsp;&nbsp;Section</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< section > < / section ></p>
+
+            <h4><p>&nbsp;&nbsp;Label appearing in the title bar</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< titel > < / titel ></p>
+
+            <h4><p>&nbsp;&nbsp;Link to other pages</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< a href="url">Here is some text < / a ></p>
+
+            <h4><p>&nbsp;&nbsp;Comment</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< !-- Here is your comment -- ></p>
+
+            <h4><p>&nbsp;&nbsp;Head with title and meta information</p></h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;< head > < meta charset="utf-8" / > < titel >Cheat Sheet< / titel > < / head ></p>
+
+            <hr>
+
+            <h2><font color="#0000FF">CSS</font></h2>
+        
+                <h3><u>1. Name the components of html elements properly</u></h3>
+                    <h4><p>&nbsp;&nbsp;Selector</p></h4>
+        
+                    <h4><p>&nbsp;&nbsp;Declarator</p></h4>
+        
+                    <h4><p>&nbsp;&nbsp;Property</p></h4>
+        
+                    <h4><p>&nbsp;&nbsp;Value</p></h4>
+        
+                <h3><u>2. Identify void elements and how they are denoted</u></h3>
+                    <h4><p>&nbsp;&nbsp;Descedant</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;div p {
+                            background-color: yellow;
+                            }</p>
+
+                    <h4><p>&nbsp;&nbsp;Child</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;div > p {
+                            background-color: yellow;
+                            }</p>
+
+                    <h4><p>&nbsp;&nbsp;Adjacent Sibling</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;div + p {
+                            background-color: yellow;
+                            }</p>
+
+                    <h4><p>&nbsp;&nbsp;Top level element</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;div ~ p {
+                            background-color: yellow;
+                            }</p>
+                
+                <h3><u>3. Specify colors by color names and in hexadecimal notation</u></h3>
+                    <h4><p>&nbsp;&nbsp;In HTML, a color can be specified using a hexadecimal
+                        value in the form:
+                        #rrggbb
+                        Where rr (red), gg (green) and bb (blue) are hexadecimal
+                        values between 00 and ff (same as decimal 0-255).
+                        For example, #ff0000 is displayed as red, because red is
+                        set to its highest value (ff) and the others are set to the
+                        lowest value (00).</p></h4>
+                    
+                    <h4><p>&nbsp;&nbsp;Red</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#ff0000</p>
+
+                    <h4><p>&nbsp;&nbsp;Blue</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#0000ff</p>
+
+                    <h4><p>&nbsp;&nbsp;Green</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#3cb371</p>
+
+                    <h4><p>&nbsp;&nbsp;Violet</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#ee82ee</p>
+
+                    <h4><p>&nbsp;&nbsp;Orange</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#ffa500</p>
+
+                    <h4><p>&nbsp;&nbsp;Purple</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#6a5acd</p>
+
+                    <h4><p>&nbsp;&nbsp;Black</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#000000</p>
+
+                    <h4><p>&nbsp;&nbsp;Grey</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#787878</p>
+
+                    <h4><p>&nbsp;&nbsp;Light Grey</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#b4b4b4</p>
+
+                    <h4><p>&nbsp;&nbsp;White</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;#ffffff</p>
+        
+                <h3><u>4. Declarations for color, background color</u></h3>
+                    <h4><p>&nbsp;&nbsp;a valid color name - like "red"</p></h4>
+
+                    <h4><p>&nbsp;&nbsp;a HEX value - like "#ff0000"</p></h4>
+
+                    <h4><p>&nbsp;&nbsp;an RGB value - like "rgb(255,0,0)"</p></h4>
+        
+                <h3><u>5. Pseudo classes for the < a > element</u></h3>
+                    <h4><p>&nbsp;&nbsp;/* unvisited link */</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;a:link {
+                            color: #FF0000;
+                            }</p>
+        
+                    <h4><p>&nbsp;&nbsp;/* visited link */</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;a:visited {
+                            color: #00FF00;
+                            }</p>
+        
+                    <h4><p>&nbsp;&nbsp;/* mouse over link */</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;a:hover {
+                            color: #FF00FF;
+                            }</p>
+        
+                    <h4><p>&nbsp;&nbsp;/* selected link */</p></h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;a:active {
+                            color: #0000FF;
+                            }</p>
+
+                <h3><u>6. Declaration for background image</u></h3>
+                    <h4><p>&nbsp;&nbsp;background-image: url("paper.gif");</p></h4>
+
+                <h3><u>7. Declaration for text alignment (left, right, center, justify)</u></h3>
+                    <h4><p>&nbsp;&nbsp;h1 {
+                        text-align: center;
+                        }
+                        </p></h4>
+
+                    <h4><p>&nbsp;&nbsp;h2 {
+                        text-align: left;
+                        }</p></h4>
+
+                    <h4><p>&nbsp;&nbsp;h3 {
+                        text-align: right;
+                        }</p></h4>
+
+                    <h4><p>&nbsp;&nbsp;div {
+                        text-align: justify;
+                        }</p></h4>
+
+                <h3><u>8. Declaration for text decoration (overline, underline, line-through)</u></h3>
+                    <h4><p>&nbsp;&nbsp;h1 {
+                        text-decoration: overline;
+                        }
+                        </p></h4>
+
+                    <h4><p>&nbsp;&nbsp;h2 {
+                        text-decoration: line-through;
+                        }</p></h4>
+
+                    <h4><p>&nbsp;&nbsp;h3 {
+                        text-decoration: underline;
+                        }</p></h4>
+
+                <h3><u>9. Declaration for text transformation (uppercase, lowercase, capitalize)</u></h3>
+                    <h4><p>&nbsp;&nbsp;p.uppercase {
+                        text-transform: uppercase;
+                        }
+                        </p></h4>
+
+                    <h4><p>&nbsp;&nbsp;p.lowercase {
+                        text-transform: lowercase;
+                        }
+
+                    <h4><p>&nbsp;&nbsp;p.capitalize {
+                        text-transform: capitalize;
+                        }
+
+                <h3><u>10. Identify the difference between serif and sans-serif fonts</u></h3>
+                    <h4><p>&nbsp;&nbsp;"Sans" means without - these fonts do not have the lines at the ends of characters</p></h4>
+
+                <h3><u>11. Declarations for font families</u></h3>
+                    <h4><p>&nbsp;&nbsp;ap {
+                        font-family: "Times New Roman", Times, serif;
+                        }</p></h4>
+
+                <h3><u>12. Declarations for font style normal and italic</u></h3>
+                    <h4><p>&nbsp;&nbsp;p.normal {
+                        font-style: normal;
+                        }</p></h4>
+
+                    <h4><p>&nbsp;&nbsp;p.italic {
+                        font-style: italic;
+                        }</p></h4>        
+
+                <h3><u>13. Declarations for font sizes</u></h3>
+                    <h4><p>&nbsp;&nbsp;font-size: 40px;</p></h4>
+                    <h4><p>&nbsp;&nbsp;font-size: 2.5em;</p></h4>
+                    <h4><p>&nbsp;&nbsp;font-weight: normal;</p></h4>
+
+                <h3><u>14. Declarations for font weights</u></h3>
+                    <h4><p>&nbsp;&nbsp;font-weight: normal;</p></h4>
+        <hr>
+    </body>
+</html>
